@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+/* CSS document*/
+
+/* witdth of the accordion*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panal {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/* End of the accordion*/
+
+.arrowlistmenu {
+    width: 200px; 
+}
+
+/* css for ul of each sub menu*/
+
+.arrowlistmenu .menuheader {
+    font: bold 14px californian FB;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding: 4px 0 4px 10px;
+    cursor: pointer;
+    background-color: #165c91;
+    background-repeat: repeat-x;
+    background-position: left center;
+}
+
+.arrowlistmenu .openheader {
+    color: #ffffff;
+    background-image: url(.jpg);
+}
+
+.arrowlistmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.arrowlistmenu ul lin{
+    padding-bottom: 2px;
+}
+
+.arrowlistmenu ul li a {
+    color: #75a8cb;
+    display: block;
+    padding: 2px 0;
+    padding-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #dadada;
+    font-size: 90%;
+}
+
+.arrowlistmenu ul li a:visited {
+    color: #75a8cb;
+
+}
+
+.arrowlistmenu ul li a:hover {
+    color: #75a8cb;
+    background: url(.jpg) no-repeat center left;
+}

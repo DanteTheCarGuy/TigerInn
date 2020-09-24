@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+.JsDatePickBox {
+    position: relative;
+    width: 212px;
+    font-family: californian FB;
+}
+
+.JsDatePickBox .jsDatePickCloseButton {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 10px;
+    width: 33px;
+    height: 13px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .jsDatePickCloseButtonOver {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 10px;
+    width: 33px;
+    height: 13px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .jsDatePickCloseButtonDown {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 10px;
+    width: 33px;
+    height: 13px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxLeftWall .leftTopCorner {
+    float: left;
+    width: 7px;
+    margin: 0;
+    padding: 0;   
+}
+
+.JsDatePickBox .boxLeftWall .leftBottomCorner {
+    margin: 0;
+    padding: 0;
+    width: 7px;
+    height: 8px;
+    background: url(.jpg) left top no-repeat;
+    overflow: hidden;
+}
+
+.JsDatePickBox .boxLeftWall .leftWall {
+    margin: 0;
+    padding: 0;
+    width: 7px;
+    background: url(.jpg) #fff left top repeat-y;
+    overflow: hidden;
+}
+
+.JsDatePickBox .boxRightWall {
+    float: left;
+    width: 7px;
+    margin: 0;
+    padding: 0;    
+}
+
+.JsDatePickBox .boxRightWall .rightTopCorner {
+    margin: 0;
+    padding: 0;
+    width: 7px;
+    height: 8px;
+    background: url(.jpg) left top no-repeat;
+    overflow: hidden;
+}
+
+.JsDatePickBox .boxRightWall .rightBottomCorner {
+    margin: 0;
+    padding: 0;
+    width: 7px;
+    height: 8px;
+    background: url(.jpg) left top no-repeat;
+    overflow: hidden;
+}
+
+.JsDatePickBox .boxRightWall .rightWall {
+    margin: 0;
+    padding: 0;
+    width: 7px;
+    background: url(.jpg) #fff left top repeat-y;
+    overflow: hidden;
+}
+
+.JsDatePickBox .topWall {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 7px;
+    width: 198px;
+    height: 4px;
+    background: url(.jpg) #fff left top repeat-y;
+}
+
+.JsDatePickBox .bottomWall {
+    position: absolute;
+    overflow: hidden;
+    bottom: -1px;
+    left: 7px;
+    width: 198px;
+    height: 4px;
+    background: url(.jpg) #fff left top repeat-y;
+}
+
+.JsDatePickBox .hiddenBoxLeftWall {
+    float: left;
+    width: 0;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.JsDatePickBox .hiddenBoxRightWall {
+    float: left;
+    width: 0;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.JsDatePickBox .boxMain {
+    float: left;
+    background-color: #fffcc;
+    margin: 0;
+    padding: 15px 0 5px 0;
+
+}
+
+.JsDatePickBox .boxMainStripped {
+    background: #fff;
+    border: none;
+}
+
+.JsDatePickBox .tooltip {
+    height: 12px;
+    line-height: 12px;
+    overflow: hidden;
+    font-size: 10px;
+    color: #fff;
+    text-align: left;
+    padding: 0;
+    margin: 2px 0 0 0;
+}
+
+.JsDatePickBox .weekDaysRow {
+    height: 12px;
+    overflow: hidden;
+    font-size: 10px;
+    color: #666;
+    text-align: center;
+    padding: 0;
+    margin: 2px 0 0 0;
+}
+
+.JsDatePickBox .weekDaysRow .weekDay {
+    float: left;
+    height: 14px;
+    overflow: hidden;
+    width: 24px;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.JsDatePickBox .boxMainInner {
+    background: #fff;
+    width: 198px;
+    float: left;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.JsDatePickBox .boxMainCellsContainer {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.JsDatePickBox .boxMainInner .controlsBar {
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+}
+
+.JsDatePickBox .boxMainInner .controlsBarText {
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+}
+
+.JsDatePickBox .boxMainInner .monthFowardButton {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .monthFowardButtonOver {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .monthFowardButtonDown {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .monthBackwardButton {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+.JsDatePickBox .boxMainInner .monthBackwardButtonOver {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .monthBackwardButtonDown {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .yearFowardButton {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+.JsDatePickBox .boxMainInner .yearFowardButtonOver {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .yearFowardButtonDown {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .yearBackwardButton {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(.jpg) left top no-repeat;
+}
+.JsDatePickBox .boxMainInner .yearBackwardButtonOver {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .yearBackwardButtonDown {
+    overflow: hidden;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(.jpg) left top no-repeat;
+}
+
+.JsDatePickBox .boxMainInner .skipDay {
+    cursor: default;
+    overflow: hidden;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+}
+
+.JsDatePickBox .boxMainInner .dayNormal {
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    color: #4c4c4c;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+.JsDatePickBox .boxMainInner .dayNormalToday {
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    color: #f40f0f;
+    font-weight: bold;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+.JsDatePickBox .boxMainInner .dayDisabled {
+    cursor: default;
+    font-size: 12px;
+    overflow: hidden;
+    color: #999;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+.JsDatePickBox .boxMainInner .dayOver {
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+    color: #4c4c4c;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+.JsDatePickBox .boxMainInner .dayOverToday {
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+    color: #f40f40;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+.JsDatePickBox .boxMainInner .dayDown {
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+    color: #F9F9F9;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+.JsDatePickBox .boxMainInner .dayDownToday {
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+    color: #f40f40;
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 4px 5px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;    
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #99ffcc;
+    font-family: "californian FB" , Times, serif;
+    font-size: 15px;
+    margin: 0;
+    padding-top: 0;
+}
+
+h1,h2,h3 {
+    text-align: left;
+}
+
+#container {
+    width: 100px;
+    background: #ffffff;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 0 15px #188;
+    box-shadow: 0 0 15px #188;
+    box-shadow: 0 0 15px #188;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #188;
+}
+#header {
+    font-size: 15px;
+    color: #165c91;
+    text-align: center;
+    padding: 0px;
+    clear: both;
+}
+
+#header a {
+    color: #165c91;
+    text-decoration: none;
+}
+
+#header a:hover {
+    color: #75a8cb;
+    text-decoration: none;
+}
+
+#banner {
+    float: left;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#menu {
+    font-size: 16px;
+    color: #165c91;
+    text-align: center;
+    padding: 0;
+    clear: both;
+}
+
+#menu a {
+    color: #165c91;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #75a8cb;
+    text-decoration: underline;
+}
+
+#left {
+    font-size: 15px;
+    clear: none;
+    height: 600px;
+    width: 200px;
+    padding-left: 30px;
+}
+
+#reservationForm {
+    font-size: 12px;
+}
+
+#right {
+    float: right;
+    clear: none;
+    height: auto;
+    width: 670px;
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+
+#footer {
+    font-size: 14px;
+    color: #75a8cb;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+#footer a {
+    color: #165c91;
+    text-decoration: none;
+}
+
+#footer ahover {
+    color: #165c91;
+}

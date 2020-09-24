@@ -32,14 +32,14 @@
 
 <div id="menu">
     <p>
-        <a href="home.html">HOME</a>
-        <a href="about.html">About Us</a>
-        <a href="college.html">Missouri University</a>
-        <a href="town.html">Around Town</a>
-        <a href="reservations.html">Reservations</a>
-        <a href="rates.html">Rates</a>
-        <a href="feedback">Feedback</a>
-        <a href="directions">Directions</a>
+        <a href="home.html">Home</a>|
+        <a href="about.html">About Us</a>|
+        <a href="college.html">Missouri University</a>|
+        <a href="town.html">Around Town</a>|
+        <a href="reservations.html">Reservations</a>|
+        <a href="rates.html">Rates</a>|
+        <a href="feedback">Feedback</a>|
+        <a href="directions">Directions</a>|
         <a href="contact">Contact</a>
     </p>
 </div>
@@ -48,7 +48,7 @@
             <div class="arrowlistmenu">
                 <h3 class="menuheader expandable">The Tiger Inn</h3>
                     <ul class="catagoryitems">
-                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="collage.html">Missouri University</a></li>
                         <li><a href="feedback.html">Feedback</a></li>
@@ -252,31 +252,119 @@
   <!----------End of left------>    
   <div id="right">
   <!----------Page Content Goes Here------>  
-  <div style="width: 600px; height: 450px; padding-top: 10px">
-    <h1 style="text-align: center; color:#000077">Mizzou University</h1>
-        <img src="images/football.jpg" alt="Mizzou Basketball"></img>
-        <img src="images/basketball.jpg" alt="Missouri Football"></img>
+  <fieldset style="width: 500px; margin-left: 30px; background-color: #cccccc; border-radius: 10px">
+    <lagend>
+        <h3 style="color= #000077;">Make A New Reservation</h3>
+    </lagend>
+    <form action="reservation.php" method="post" onsubmit="return validate(this)">
+    Name:
+    <input type="text" name="name" size="20" maxlength="32">
+    <br>
+    <p>
+        Contact Info:
+        <input type="text" name="contactInfo" size="14" maxlength="32">
+        <br>
+    </p>
+    <p>
+        Check In:
+        <span style="position: relative;">
+            <input id="inputField3" type="text" name="chekIn" style="8" maxlength="16" globalnumber="747">
+        <div class="JsDatePickBox" style="z-index: 3; position: absolute; top: 18px; left: 0px; display: none";>
+            <div class="boxLeftWall">
+                <div class="leftTopCorner"></div>
+                <div class="leftWall"></div>
+                <div class="leftBottomCorner"></div>
+            </div>
+            <div class="boxMain">
+                <div class="boxMainInner">
+                    <div class="controlBar" globalnumber="747">
+                        <div class="monthForwardButton" globalnumber="747"></div>
+                        <div class="monthBackwardButton" globalnumber="747"></div>
+                        <div class="yearForwardButton" globalnumber="747"></div>
+                        <div class="yearBackwardsButton" globalnumber="747"></div>
+                        <div class="controlsBarText">September, 2020</div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="tooltip"></div>
+                    <div class="weekDayRow">
+                        <div class="weekDay">Mon</div>
+                        <div class="weekDay">Tue</div>
+                        <div class="weekDay">Wed</div>
+                        <div class="weekDay">Thu</div>
+                        <div class="weekDay">Fri</div>
+                        <div class="weekDay">Sat</div>
+                        <div class="weekDay" style="margin-right: 0px;">Sun</div>
+                    </div>
+                    <div class="boxMainCellsContainer">
+                        <div class="skipDay"></div>
+                        <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">1</div> 
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">2</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">3</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">4</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">5</div>
+                    <div class="dayNormal" globalnumber="524" style="margi-right: 0px; background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">6</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">7</div> 
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">8</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">9</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">10</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">11</div>
+                    <div class="dayNormal" globalnumber="524" style="margi-right: 0px; background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">13</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">14</div> 
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">15</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">16</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">17</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">18</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">19</div>
+                    <div class="dayNormal" globalnumber="524" style="margi-right: 0px; background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">20</div>
+                    <div class="dayNormalToday" globalnumber="524" istoday="1" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">21</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">22</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">23</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">25</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">26</div>
+                    <div class="dayNormal" globalnumber="524" style="margi-right: 0px; background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">27</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">28</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">29</div>
+                    <div class="dayNormal" globalnumber="524" style="background: rgba(0,0,0,0) url("img/ocean_blue_daynormal.gif") no-repeat scroll left top;">30</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="boxRightwall">
+            <div class="rightTopCorner"></div>
+            <div class="rightWall"></div>
+            <div class="rightBottomCorner"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="jsDatePickCloseButton" globalnumber="524"></div>
+        <div class="topWall"></div>
+        <div class="bottomWall"></div>
+        </span>
+        (dd-mm-yyyy)
+    </p>
+    <p>
+        Room Type:
+        <br>
+        <select name="room" size="1">
+            <option value="Standard Non-Smoking">Standard Non-smoking</option>
+            <option value="Standard Smoking">Standard smoking</option>
+            <option value="Double Smoking">Double smoking</option>
+            <option value="Double Non-Smoking">Double Non-smoking</option>
+        </select>
+    </p>
+    <p>
+    <input type="submit" name="submit" value="submit">
+    </form>
+</fieldset>
+    <fieldset style="width: 500px; margin-left: 30px; background-color: #cccccc; border-radius: 10px;">
+    <legend>
+        <h3 style="color; #000077;">Manage Reservations</h3>
+    </legend>
+    <form action="reervation.php" method="post"
+
+
   </div>
-  <div style="width: 600px; padding-top:10px; "
-    <p>
-        Missouri University is Conveniently located 2 blocks from the Tiger Inn and Downtown Columbia. The University was founded Feburary 11, 1839. The Inn and the school have a long history
-        and relationship. This is how the hotel got is name. In fact, many of our customers are parents of current and past alumni.
-        <br>
-    </p>
-    <p>
-        The Inn has also been a strong and proud sponcer of the Tiger Athletic teams sience the Inn was founded in 1901. We are happy to extend our business to the familes and guests of 
-        all University Athletics. we are proud to be Tiger fans. We encourage all guests to check out Mizzou Athletic Faculity. Whether your sport is Football, Baseball, Basketball, Soccer,
-        Softball, ect you can find out current schedules in the menu. 
-        <br>
-    </p>
-    <p>
-        Please Check out Mizzou's amazing campus and staduim Faurot Field. If your intrested in Mizzou University, you can contact them @ (573)555-2020.
-        <br>
-    </p>
-    <p>
-        Check out the links on the left for a list of upcoming events and local attractions. GO TIGERS!!!!
-    </p>
-  </div>
+ 
+
 <!----------End of Content Goes Here------> 
   </div>
 <!-----------end of right------>
@@ -290,14 +378,14 @@
     </section>
     <div id="footer">
     <p>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="University.html">Missouri University</a>
-        <a href="town.html">Around Town</a>
-        <a href="reservations.html">Reservations</a>
-        <a href="rates.html">Rates</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="directions.html">Directions</a>
+        <a href="home.html">Home</a>|
+        <a href="about.html">About</a>|
+        <a href="University.html">Missouri University</a>|
+        <a href="town.html">Around Town</a>|
+        <a href="reservations.html">Reservations</a>|
+        <a href="rates.html">Rates</a>|
+        <a href="feedback.html">Feedback</a>|
+        <a href="directions.html">Directions</a>|
         <a href="Contact.html">Contact</a>
     </p>
     <p>
